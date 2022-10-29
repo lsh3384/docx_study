@@ -1,48 +1,29 @@
 const docx = require("docx");
 
 const fs = require("fs");
-const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType,  } = require("docx");
+const { Document, Packer, Paragraph } = require("docx");
 
+const emptyLine = require('./emptyLine');
+const firstLine = require('./firstLine');
+const firstTable = require('./firstTable');
+const secondTable = require('./secondTable');
 // Documents contain sections, you can have multiple sections per document, go here to learn more about sections
 // This simple example will only contain one section
-const table = new Table({
-  width: {
-    size: 5000,
-    type: WidthType,
-  },
-  rows: [
-    new TableRow({
-      children: [
-        new TableCell({
-          children: [new Paragraph("Hello")],
-        }),
-        new TableCell({
-          children: [],
-        }),
-      ],
-    }),
-    new TableRow({
-      children: [
-        new TableCell({
-          children: [],
-        }),
-        new TableCell({
-          children: [new Paragraph("World")],
-        }),
-      ],
-    }),
-  ],
-});
+
 
 const doc = new Document({
   sections: [
     {
       children: [
-        table
+        firstLine,
+        firstTable,
+        emptyLine,
+        secondTable,
       ],
     },
   ],
 });
+
 
 // Used to export the file into a .docx file
 Packer.toBuffer(doc).then((buffer) => {
