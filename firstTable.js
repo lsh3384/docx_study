@@ -1,7 +1,8 @@
 const { Paragraph, TextRun, Table, TableRow, TableCell, WidthType, HeightRule, AlignmentType, VerticalAlign } = require("docx");
 
 const firstTable = new Table({
-    rows: [
+  width: { size: 100, type: WidthType.PERCENTAGE, },
+  rows: [
       new TableRow({
         children: [
           new TableCell({

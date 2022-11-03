@@ -8,6 +8,7 @@ const firstLine = require('./firstLine');
 const firstTable = require('./firstTable');
 const secondTable = require('./secondTable');
 const thirdTable = require('./thirdTable');
+const testTable = require('./testTable');
 // Documents contain sections, you can have multiple sections per document, go here to learn more about sections
 // This simple example will only contain one section
 
@@ -16,12 +17,13 @@ const doc = new Document({
   sections: [
     {
       children: [
+        testTable,
         firstLine,
         firstTable,
-        emptyLine,
-        secondTable,
-        emptyLine,
-        thirdTable,
+        // emptyLine,
+        // secondTable,
+        // emptyLine,
+        // thirdTable,
       ],
     },
   ],
