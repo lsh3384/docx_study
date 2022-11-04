@@ -8,50 +8,75 @@ const {
   HeightRule,
   AlignmentType,
   VerticalAlign,
-  BorderStyle
+  BorderStyle,
+  TableLayoutType,
+  TableAnchorType,
+  RelativeHorizontalPosition,
+  OverlapType,
+  convertInchesToTwip
 } = require("docx");
-
-
-const borderNone = {
-  top: {
-    style: BorderStyle.NONE,
-    size: 1,
-  },
-  bottom: {
-    style: BorderStyle.NONE,
-    size: 1,
-  },
-  left: {
-    style: BorderStyle.NONE,
-    size: 1,
-  },
-  right: {
-    style: BorderStyle.NONE,
-    size: 1,
-  },
-}
 
 const firstRow = new TableRow({
   children: [
     new TableCell({
       width: {
-        size: 4000,
-        type: WidthType,
+        size: 300,
+        type: WidthType.DXA,
       },
-      borders: borderNone,
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
       children: [
         new Paragraph({
-          text: "수신 : 특허청장",
           alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text:  "수    신 : 특허청장",
+              size: 18,
+            }),
+          ]
         }),
       ],
     }),
+
     new TableCell({
       width: {
-        size: 1000,
-        type: WidthType,
+        size: 8,
+        type: WidthType.PERCENTAGE,
       },
-      borders: borderNone,
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
       children: [
         new Paragraph({
           text: "",
@@ -61,14 +86,36 @@ const firstRow = new TableRow({
     }),
     new TableCell({
       width: {
-        size: 4000,
-        type: WidthType,
+        size: 300,
+        type: WidthType.DXA,
       },
-      borders: borderNone,
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
       children: [
         new Paragraph({
-          text: "조사기술분야 : 전기심사과",
           alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: "조사기술분야 : 전기심사과",
+              size: 18,
+            }),
+          ]
         }),
       ],
     }),
@@ -79,105 +126,232 @@ const firstRow = new TableRow({
   },
 });
 
-
 const secondRow = new TableRow({
-    children: [
-      new TableCell({
-        width: {
-          size: 4000,
-          type: WidthType,
+  children: [
+    new TableCell({
+      width: {
+        size: 300,
+        type: WidthType.DXA,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "참조 : 전기통신기술심사국 차상도 심사관",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-      new TableCell({
-        width: {
-          size: 1000,
-          type: WidthType,
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-      new TableCell({
-        width: {
-          size: 4000,
-          type: WidthType,
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "조사의뢰일 : 2022. 02. 15 .",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-    ],
-    height: {
-      value: 300,
-      rule: HeightRule.ATLEAST,
-    },
-  });
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: "신청인 : 전기통신기술심사국 차상도 심사관",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+    }),
+    new TableCell({
+      width: {
+        size: 8,
+        type: WidthType.PERCENTAGE,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          text: "",
+          alignment: AlignmentType.LEFT,
+        }),
+      ],
+    }),
+    new TableCell({
+      width: {
+        size: 300,
+        type: WidthType.DXA,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: "조사의뢰일 : 2022. 02. 15 .",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+    }),
+  ],
+  height: {
+    value: 300,
+    rule: HeightRule.ATLEAST,
+  },
+});
 
-  const thirdRow = new TableRow({
-    children: [
-      new TableCell({
-        width: {
-          size: 4000,
-          type: WidthType,
+const thirdRow = new TableRow({
+  children: [
+    new TableCell({
+      width: {
+        size: 300,
+        type: WidthType.DXA,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "발신 :  ㈜티디아 대표",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-      new TableCell({
-        width: {
-          size: 1000,
-          type: WidthType,
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-      new TableCell({
-        width: {
-          size: 4000,
-          type: WidthType,
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
         },
-        borders: borderNone,
-        children: [
-          new Paragraph({
-            text: "조사보고일 : 2022. 04. 11.",
-            alignment: AlignmentType.LEFT,
-          }),
-        ],
-      }),
-    ],
-    height: {
-      value: 300,
-      rule: HeightRule.ATLEAST,
-    },
-  });
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: "발    신 :  ㈜티디아 대표",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+    }),
+    new TableCell({
+      width: {
+        size: 8,
+        type: WidthType.PERCENTAGE,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          text: "",
+          alignment: AlignmentType.LEFT,
+        }),
+      ],
+    }),
+    new TableCell({
+      width: {
+        size: 300,
+        type: WidthType.DXA,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        bottom: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        left: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+        right: {
+          style: BorderStyle.NONE,
+          size: 1,
+        },
+      },
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: "조사보고일 : 2022. 04. 11.",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+    }),
+  ],
+  height: {
+    value: 300,
+    rule: HeightRule.ATLEAST,
+  },
+});
 
-const firstTable = new Table({
+const secondTable = new Table({
+  indent: {
+    size: 400,
+    type: WidthType.DXA,
+  },
+  width: { size: 90, type: WidthType.PERCENTAGE },
+  layout: TableLayoutType.FIXED,
   rows: [firstRow, secondRow, thirdRow],
 });
 
-module.exports = firstTable;
+module.exports = secondTable;

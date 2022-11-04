@@ -17,13 +17,11 @@ const doc = new Document({
   sections: [
     {
       children: [
-        testTable,
-        firstLine,
         firstTable,
-        // emptyLine,
-        // secondTable,
-        // emptyLine,
-        // thirdTable,
+        emptyLine,
+        secondTable,
+        emptyLine,
+        thirdTable,
       ],
     },
   ],
