@@ -859,10 +859,10 @@ const eighthRow = new TableRow({
 const ninthRow = new TableRow({
   children: [
 
-    // # 3
+    // # 4-5
     new TableCell({
       width: {
-        size: col_width.three,
+        size: col_width.four + col_width.five,
         type: WidthType.PERCENTAGE,
       },
       borders: {
@@ -872,7 +872,7 @@ const ninthRow = new TableRow({
         }
       },
       rowSpan: 3,
-      columnSpan: 1,
+      columnSpan: 2,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -888,10 +888,10 @@ const ninthRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
     
-    // # 4-8
+    // # 6-10
     new TableCell({
       width: {
-        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight,
+        size: col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 5,
@@ -909,13 +909,13 @@ const ninthRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 9-10
+    // # 11-13
     new TableCell({
       width: {
-        size: col_width.nine + col_width.ten,
+        size: col_width.eleven + col_width.twelve + col_width.thirteen,
         type: WidthType.PERCENTAGE,
       },
-      columnSpan: 2,
+      columnSpan: 3,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -930,10 +930,10 @@ const ninthRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 11
+    // # 14
     new TableCell({
       width: {
-        size: col_width.eleven,
+        size: col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 1,
@@ -962,10 +962,10 @@ const ninthRow = new TableRow({
 const tenthRow = new TableRow({
   children: [
     
-    // # 4-8
+    // # 6-10
     new TableCell({
       width: {
-        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight,
+        size: col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 5,
@@ -983,13 +983,13 @@ const tenthRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 9-10
+    // # 11-13
     new TableCell({
       width: {
-        size: col_width.nine + col_width.ten,
+        size: col_width.eleven + col_width.twelve + col_width.thirteen,
         type: WidthType.PERCENTAGE,
       },
-      columnSpan: 2,
+      columnSpan: 3,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -1004,10 +1004,10 @@ const tenthRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 11
+    // # 14
     new TableCell({
       width: {
-        size: col_width.eleven,
+        size: col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 1,
@@ -1037,10 +1037,10 @@ const tenthRow = new TableRow({
 const eleventhRow = new TableRow({
   children: [
     
-    // # 4-8
+    // # 6-10
     new TableCell({
       width: {
-        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight,
+        size: col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 5,
@@ -1058,13 +1058,13 @@ const eleventhRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 9-10
+    // # 11-13
     new TableCell({
       width: {
-        size: col_width.nine + col_width.ten,
+        size: col_width.eleven + col_width.twelve + col_width.thirteen,
         type: WidthType.PERCENTAGE,
       },
-      columnSpan: 2,
+      columnSpan: 3,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -1079,10 +1079,10 @@ const eleventhRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 11
+    // # 14
     new TableCell({
       width: {
-        size: col_width.eleven,
+        size: col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 1,
@@ -1109,13 +1109,13 @@ const eleventhRow = new TableRow({
 
 // ---------------------------------------------------------------------------------------12---------------------------------------------------------------------
 
-const twentiethRow = new TableRow({
+const twelvethRow = new TableRow({
   children: [
 
-    // # 3
+    // # 4-5
     new TableCell({
       width: {
-        size: col_width.three,
+        size: col_width.four + col_width.five,
         type: WidthType.PERCENTAGE,
       },
       borders: {
@@ -1124,8 +1124,8 @@ const twentiethRow = new TableRow({
           size: 10,
         }
       },
-      rowSpan: 3,
-      columnSpan: 1,
+      rowSpan: 2,
+      columnSpan: 2,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -1141,10 +1141,10 @@ const twentiethRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
     
-    // # 4-8
+    // # 6-10
     new TableCell({
       width: {
-        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight,
+        size: col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 5,
@@ -1162,13 +1162,13 @@ const twentiethRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 9-10
+    // # 11-13
     new TableCell({
       width: {
-        size: col_width.nine + col_width.ten,
+        size: col_width.eleven + col_width.twelve + col_width.thirteen,
         type: WidthType.PERCENTAGE,
       },
-      columnSpan: 2,
+      columnSpan: 3,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
@@ -1183,10 +1183,10 @@ const twentiethRow = new TableRow({
       verticalAlign: VerticalAlign.CENTER,
     }),
 
-    // # 11
+    // # 14
     new TableCell({
       width: {
-        size: col_width.eleven,
+        size: col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 1,
@@ -1210,24 +1210,111 @@ const twentiethRow = new TableRow({
   },
 });
 
-// ---------------------------------------------------------------------------------------10---------------------------------------------------------------------
 
-const thirtiethRow = new TableRow({
+
+// ---------------------------------------------------------------------------------------13---------------------------------------------------------------------
+
+const thirteenthRow = new TableRow({
+  children: [
+
+    // # 6-10
+    new TableCell({
+      width: {
+        size: col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 5,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 11-13
+    new TableCell({
+      width: {
+        size: col_width.eleven + col_width.twelve + col_width.thirteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 14
+    new TableCell({
+      width: {
+        size: col_width.fourteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 1,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              size: 18,
+            }),
+          ]
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+  ],
+  height: {
+    value: 300,
+    rule: HeightRule.ATLEAST,
+  },
+});
+
+
+
+// ---------------------------------------------------------------------------------------14---------------------------------------------------------------------
+
+const fourteenthRow = new TableRow({
   children: [
     
-    // # 4-8
+    // # 1-14
     new TableCell({
       width: {
-        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight,
+        size: col_width.one + col_width.two + col_width.three + col_width.four + col_width.five + 
+        col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten +
+        col_width.eleven + col_width.twelve + col_width.thirteen + col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
-      columnSpan: 5,
+      borders: {
+        top: {
+          style: BorderStyle.DOUBLE,
+          size: 10,
+        }
+      },
+      columnSpan: 14,
       children: [
         new Paragraph({
           alignment: AlignmentType.CENTER,
           children: [
             new TextRun({
-              text: "",
+              text: "타국심사이력",
+              bold: true,
               size: 18,
             }),
           ]
@@ -1235,11 +1322,184 @@ const thirtiethRow = new TableRow({
       ],
       verticalAlign: VerticalAlign.CENTER,
     }),
+  ]
+});
 
-    // # 9-10
+
+
+// ---------------------------------------------------------------------------------------15---------------------------------------------------------------------
+
+const fifteenthRow = new TableRow({
+  children: [
+
+    // # 1-3
     new TableCell({
       width: {
-        size: col_width.nine + col_width.ten,
+        size: col_width.one + col_width.two + col_width.three,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "구분",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 4-5
+    new TableCell({
+      width: {
+        size: col_width.four + col_width.five,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "문헌번호",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 6-7
+    new TableCell({
+      width: {
+        size: col_width.six + col_width.seven,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "선행기술",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 8-9
+    new TableCell({
+      width: {
+        size: col_width.eight + col_width.nine,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "관련도",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 10-12
+    new TableCell({
+      width: {
+        size: col_width.ten + col_width.eleven + col_width.twelve,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "청구항",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 13-14
+    new TableCell({
+      width: {
+        size: col_width.thirteen + col_width.fourteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "비고",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+  ],
+});
+
+
+
+// ---------------------------------------------------------------------------------------16---------------------------------------------------------------------
+
+const sixteenthRow = new TableRow({
+  children: [
+
+    // # 1-3
+    new TableCell({
+      width: {
+        size: col_width.one + col_width.two + col_width.three,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 4-5
+    new TableCell({
+      width: {
+        size: col_width.four + col_width.five,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 2,
@@ -1249,6 +1509,218 @@ const thirtiethRow = new TableRow({
           children: [
             new TextRun({
               text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 6-7
+    new TableCell({
+      width: {
+        size: col_width.six + col_width.seven,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 8-9
+    new TableCell({
+      width: {
+        size: col_width.eight + col_width.nine,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 10-12
+    new TableCell({
+      width: {
+        size: col_width.ten + col_width.eleven + col_width.twelve,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 13-14
+    new TableCell({
+      width: {
+        size: col_width.thirteen + col_width.fourteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+  ],
+});
+
+
+
+// ---------------------------------------------------------------------------------------17---------------------------------------------------------------------
+
+const seventeenthRow = new TableRow({
+  children: [
+
+    // # 1-3
+    new TableCell({
+      width: {
+        size: col_width.one + col_width.two + col_width.three,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "본원의 요약",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 4-5
+    new TableCell({
+      width: {
+        size: col_width.four + col_width.five + col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten + col_width.eleven + col_width.twelve + col_width.thirteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 11,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: `[발명의 해결하고자 하는 과제 및 목적]`,
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: `시스템을 제공`,
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: `[과제의 해결 수단 및 핵심 구성]`,
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.LEFT,
+          children: [
+            new TextRun({
+              text: `특징으로 함`,
+              size: 18,
+            }),
+          ],
+        }),
+
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+  ],
+});
+
+
+
+// ---------------------------------------------------------------------------------------18---------------------------------------------------------------------
+const eighteenthRow = new TableRow({
+  children: [
+    
+    // # 1-14
+    new TableCell({
+      width: {
+        size: col_width.one + col_width.two + col_width.three + col_width.four + col_width.five + 
+        col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten +
+        col_width.eleven + col_width.twelve + col_width.thirteen + col_width.fourteen,
+        type: WidthType.PERCENTAGE,
+      },
+      borders: {
+        top: {
+          style: BorderStyle.DOUBLE,
+          size: 10,
+        }
+      },
+      columnSpan: 14,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "관련 선행기술 목록",
+              bold: true,
               size: 18,
             }),
           ]
@@ -1256,11 +1728,107 @@ const thirtiethRow = new TableRow({
       ],
       verticalAlign: VerticalAlign.CENTER,
     }),
+  ]
+});
 
-    // # 11
+
+
+// ---------------------------------------------------------------------------------------19---------------------------------------------------------------------
+const ninteenthRow = new TableRow({
+  children: [
+    // # 1-4
     new TableCell({
       width: {
-        size: col_width.eleven,
+        size: col_width.one + col_width.two + col_width.three + col_width.four,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 4,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "문헌번호",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "(공개일자)",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 5-11
+    new TableCell({
+      width: {
+        size: col_width.five + col_width.six + col_width.seven + col_width.eight + col_width.nine + col_width.ten + col_width.eleven,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 7,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "발명의 명칭",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 12-13
+    new TableCell({
+      width: {
+        size: col_width.twelve + col_width.thirteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "관련",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "청구항",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+
+    // # 14
+    new TableCell({
+      width: {
+        size: col_width.fourteen,
         type: WidthType.PERCENTAGE,
       },
       columnSpan: 1,
@@ -1269,22 +1837,161 @@ const thirtiethRow = new TableRow({
           alignment: AlignmentType.CENTER,
           children: [
             new TextRun({
-              text: "",
+              text: "참고",
+              bold: true,
               size: 18,
             }),
-          ]
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "청구항",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+  ],
+});
+
+
+
+// ---------------------------------------------------------------------------------------20---------------------------------------------------------------------
+const twentiethRow = new TableRow({
+  children: [
+    // # 1
+    new TableCell({
+      width: {
+        size: col_width.one,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 1,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "1.",
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 2-4
+    new TableCell({
+      width: {
+        size: col_width.two + col_width.three + col_width.four,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 3,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "KR12345678 B1",
+              size: 18,
+            }),
+          ],
+        }),
+
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "(2022.01.01)",
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 5-11
+    new TableCell({
+      width: {
+        size:
+          col_width.five +
+          col_width.six +
+          col_width.seven +
+          col_width.eight +
+          col_width.nine +
+          col_width.ten +
+          col_width.eleven,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 7,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "~~ 장치",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 12-13
+    new TableCell({
+      width: {
+        size: col_width.twelve + col_width.thirteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 2,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "-",
+              bold: true,
+              size: 18,
+            }),
+          ],
+        }),
+      ],
+      verticalAlign: VerticalAlign.CENTER,
+    }),
+
+    // # 14
+    new TableCell({
+      width: {
+        size: col_width.fourteen,
+        type: WidthType.PERCENTAGE,
+      },
+      columnSpan: 1,
+      children: [
+        new Paragraph({
+          alignment: AlignmentType.CENTER,
+          children: [
+            new TextRun({
+              text: "-",
+              bold: true,
+              size: 18,
+            }),
+          ],
         }),
       ],
       verticalAlign: VerticalAlign.CENTER,
     }),
   ],
-  height: {
-    value: 300,
-    rule: HeightRule.ATLEAST,
-  },
 });
-
-
 
 
 
@@ -1300,11 +2007,18 @@ const thirdTable = new Table({
     sixthRow,
     seventhRow,
     eighthRow,
-    // ninthRow,
-    // tenthRow,
-    // eleventhRow,
-    // twentiethRow,
-    // thirtiethRow,
+    ninthRow,
+    tenthRow,
+    eleventhRow,
+    twelvethRow,
+    thirteenthRow,
+    fourteenthRow,
+    fifteenthRow,
+    sixteenthRow,
+    seventeenthRow,
+    eighteenthRow,
+    ninteenthRow,
+    twentiethRow,
   ],
 });
 
