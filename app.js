@@ -9,6 +9,8 @@ const firstTable = require('./firstTable');
 const secondTable = require('./secondTable');
 const thirdTable = require('./thirdTable');
 const testTable = require('./testTable');
+const fourthTable = require('./fourthTable');
+const fifthTable = require('./fifthTable');
 // Documents contain sections, you can have multiple sections per document, go here to learn more about sections
 // This simple example will only contain one section
 
@@ -22,6 +24,10 @@ const doc = new Document({
         secondTable,
         emptyLine,
         thirdTable,
+        emptyLine,
+        fourthTable,
+        emptyLine,
+        fifthTable,
       ],
     },
   ],
